@@ -1,4 +1,4 @@
-f = open('main.js', 'r')
+f = open('../../js/main.js', 'r')
 file_contents = f.read()
 import re
 # removes front part of object
@@ -16,7 +16,7 @@ e = re.split('"special-events/""(.*?)","eventSocial":"', c)
 h = len(e)
 
 def makePage(url) :
-	w = open('special-events/'+url,'w')
+	w = open('../../special-events/'+url,'w')
 
 	message = """<html>
 	<head></head>
